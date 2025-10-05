@@ -19,6 +19,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
+  
   title: "TamaraPharm LTD - Trusted Partners in Pharmaceutical Importation",
   description:
     "TamaraPharm LTD is your reliable partner for pharmaceutical importation and distribution in Nigeria. Licensed by PCN, NAFDAC, and SON. Quality medications through regulatory compliance.",

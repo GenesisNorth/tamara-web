@@ -16,7 +16,7 @@ export async function GET() {
     const rssText = await response.text()
 
     console.log("[v0] RSS feed length:", rssText.length)
-    const itemMatches = rssText.match(/<item>(.*?)<\/item>/gs) || []
+    const itemMatches = rssText.match(/<item>(.*?)<\/item>/g) || []
     console.log("[v0] Number of items found in RSS:", itemMatches.length)
 
     // Parse RSS XML to extract posts
