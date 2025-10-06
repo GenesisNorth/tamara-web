@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
+import Providers from "@/components/providers"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     description:
       "Licensed pharmaceutical importation and distribution company in Nigeria. Fully compliant with PCN, NAFDAC, and SON regulations.",
   },
-    generator: 'v0.app'
+    generator: 'Tamara Pharmacy'
 }
 
 export default function RootLayout({
@@ -60,7 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} antialiased`}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
